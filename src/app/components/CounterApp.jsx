@@ -1,11 +1,19 @@
 
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const CounterApp = () => {
 
-    const [count, setCount] = React.useState(0);
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log('Component mounted');
+    }, []);
+
+    useEffect(() => {
+        console.log('Count changed:', count);
+    }, [count]);
 
     const handleIncrement = () => {
         setCount(count + 1);
