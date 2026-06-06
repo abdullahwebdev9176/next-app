@@ -5,6 +5,7 @@ import MovieCard from "./components/MovieCard";
 import CounterApp from "./components/CounterApp";
 import LoginStatus from "./components/LoginStatus";
 import EventHandlers from "./components/EventHandlers";
+import LoginStatusNew from "./components/LoginStatusNew";
 
 export default function Home() {
 
@@ -33,7 +34,8 @@ export default function Home() {
     <>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        <EventHandlers />
+        <LoginStatusNew />
+        {/* <EventHandlers /> */}
         {/* <CounterApp /> */}
         {/* <LoginStatus id={movies[0].id} title={movies[0].title} year={movies[0].year} rating={movies[0].rating} /> */}
         
