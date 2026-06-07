@@ -10,6 +10,7 @@ import RenderingList from "./components/RenderingList";
 import ControledInputs from "./components/ControledInputs";
 import Form from "./components/Form";
 import Wrapper from "./components/Wrapper";
+import Search from "./components/Search";
 
 export default function Home() {
 
@@ -38,7 +39,8 @@ export default function Home() {
     <>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        <Wrapper />
+        <Search />
+        {/* <Wrapper /> */}
         {/* <Form /> */}
         {/* <ControledInputs /> */}
         {/* <RenderingList /> */}
