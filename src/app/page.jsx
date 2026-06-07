@@ -37,8 +37,8 @@ export default function Home() {
     <>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        <Form />
-        {/* <ControledInputs /> */}
+        {/* <Form /> */}
+        <ControledInputs />
         {/* <RenderingList /> */}
         {/* <LoginStatusNew /> */}
         {/* <EventHandlers /> */}
