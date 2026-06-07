@@ -9,6 +9,7 @@ import LoginStatusNew from "./components/LoginStatusNew";
 import RenderingList from "./components/RenderingList";
 import ControledInputs from "./components/ControledInputs";
 import Form from "./components/Form";
+import Wrapper from "./components/Wrapper";
 
 export default function Home() {
 
@@ -37,8 +38,9 @@ export default function Home() {
     <>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
+        <Wrapper />
         {/* <Form /> */}
-        <ControledInputs />
+        {/* <ControledInputs /> */}
         {/* <RenderingList /> */}
         {/* <LoginStatusNew /> */}
         {/* <EventHandlers /> */}
