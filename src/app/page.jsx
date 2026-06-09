@@ -11,6 +11,8 @@ import ControledInputs from "./components/ControledInputs";
 import Form from "./components/Form";
 import Wrapper from "./components/Wrapper";
 import Search from "./components/Search";
+import MemoHook from "./components/MemoHook";
+import { AuthProvider } from "./services/UserContext";
 
 export default function Home() {
 
@@ -37,9 +39,12 @@ export default function Home() {
 
   return (
     <>
+
+    <AuthProvider>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        <Search />
+        <MemoHook />
+        {/* <Search /> */}
         {/* <Wrapper /> */}
         {/* <Form /> */}
         {/* <ControledInputs /> */}
@@ -54,6 +59,8 @@ export default function Home() {
         {/* <MovieCard movies={movies} /> */}
       </main>
       <Footer />
+    </AuthProvider>
+      
     </>
   );
 }
