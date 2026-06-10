@@ -1,26 +1,26 @@
 'use client'
 
 import React, { useState } from 'react'
-import Modal from './Modal'
+import NewSearch from './NewSearch'
+import ProductList from './ProductList'
 
 const Wrapper = () => {
 
-    const [open, setOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
 
-    const handleModal = () =>{
-        setOpen(true)
-    }
-
-    const handleClose = () =>{
-        setOpen(false)
-    }
+  const products = [
+    'Apple',
+    'Banana',
+    'Mango',
+    'Orange',
+    'Grapes',
+  ];
 
   return (
-    <>
-        <Modal isOpen={open} onClose={handleClose} />
-
-        <button onClick={handleModal} type='button' className='mt-4 cursor-pointer rounded py-2 px-4 bg-green-500 text-white'>Open Modal</button>
-    </>
+    <div className='text-center'>
+      <NewSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <ProductList products={products} searchTerm={searchTerm} />
+    </div>
   )
 }
 

@@ -43,9 +43,9 @@ export default function Home() {
     <AuthProvider>
       <Header />
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        <MemoHook />
+        {/* <MemoHook /> */}
         {/* <Search /> */}
-        {/* <Wrapper /> */}
+        <Wrapper />
         {/* <Form /> */}
         {/* <ControledInputs /> */}
         {/* <RenderingList /> */}
