@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import Alert from '@/app/components/Alert'
+// import Alert from '@/app/components/Alert'
 
 const ControledInputs = () => {
 

@@ -13,6 +13,7 @@ import Wrapper from "./components/Wrapper";
 import Search from "./components/Search";
 import MemoHook from "./components/MemoHook";
 import { AuthProvider } from "./services/UserContext";
+import Parent from "./components/Parent";
 
 export default function Home() {
 
@@ -45,6 +46,7 @@ export default function Home() {
       <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
         {/* <MemoHook /> */}
         {/* <Search /> */}
+        {/* <Parent /> */}
         <Wrapper />
         {/* <Form /> */}
         {/* <ControledInputs /> */}

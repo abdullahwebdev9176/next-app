@@ -17,14 +17,17 @@ const CounterApp = () => {
 
     const handleIncrement = () => {
         setCount(count + 1);
+        console.log('Incremented');
     }
     const handleDecrement = () => {
         if(count > 0) {
             setCount(count - 1);
         }
+        console.log('Decremented');
     }
     const handleReset = () => {
         setCount(0);
+        console.log('Reset');
     }
     
     return (
