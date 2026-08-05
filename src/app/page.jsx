@@ -14,6 +14,7 @@ import Search from "./components/Search";
 import MemoHook from "./components/MemoHook";
 import { AuthProvider } from "./services/UserContext";
 import Parent from "./components/Parent";
+import Reducer from "./components/Reducer";
 
 export default function Home() {
 
@@ -47,7 +48,8 @@ export default function Home() {
         {/* <MemoHook /> */}
         {/* <Search /> */}
         {/* <Parent /> */}
-        <Wrapper />
+        {/* <Wrapper /> */}
+        <Reducer />
         {/* <Form /> */}
         {/* <ControledInputs /> */}
         {/* <RenderingList /> */}
