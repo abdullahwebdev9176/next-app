@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import ParentNewTsFile from './ParentNewTsFile'
 import TodoComponent from './TodoComponent'
 import UserProfile from './UserProfile'
-
+import UncontrolledComponent from './UncontrolledComponent'
 import TaskItem from '../components/TaskItem';
 import type { Task } from '../types/task';
 
@@ -37,7 +37,7 @@ const Wrapper = () => {
   return (
     <div className='text-center'>
 
-      <div style={{ padding: '20px' }}>
+      {/* <div style={{ padding: '20px' }}>
         <h1 className='mb-3'>My Type-Safe Task Manager</h1>
 
         <form onSubmit={handleAddTask}>
@@ -56,7 +56,9 @@ const Wrapper = () => {
             <TaskItem key={task.id} task={task} onToggle={handleToggleTask} />
           ))}
         </div>
-      </div>
+      </div> */}
+
+      <UncontrolledComponent />
 
 
       {/* <NewForm /> */}

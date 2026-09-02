@@ -43,30 +43,30 @@ export default function Home() {
   return (
     <>
 
-    <AuthProvider>
-      <Header />
-      <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
-        {/* <MemoHook /> */}
-        {/* <Search /> */}
-        {/* <Parent /> */}
-        {/* <Wrapper /> */}
-        {/* <Reducer /> */}
-        <ReducerForm />
-        {/* <Form /> */}
-        {/* <ControledInputs /> */}
-        {/* <RenderingList /> */}
-        {/* <LoginStatusNew /> */}
-        {/* <EventHandlers /> */}
-        {/* <CounterApp /> */}
-        {/* <LoginStatus id={movies[0].id} title={movies[0].title} year={movies[0].year} rating={movies[0].rating} /> */}
-        
-        {/* <MovieCard id={movies[0].id} title={movies[0].title} year={movies[0].year} rating={movies[0].rating} /> */}
+      <AuthProvider>
+        <Header />
+        <main style={{ minHeight: "calc(100vh - 20vh)" }} className="flex items-center justify-center">
+          {/* <MemoHook /> */}
+          {/* <Search /> */}
+          {/* <Parent /> */}
+          <Wrapper />
+          {/* <Reducer /> */}
+          {/* <ReducerForm /> */}
+          {/* <Form /> */}
+          {/* <ControledInputs /> */}
+          {/* <RenderingList /> */}
+          {/* <LoginStatusNew /> */}
+          {/* <EventHandlers /> */}
+          {/* <CounterApp /> */}
+          {/* <LoginStatus id={movies[0].id} title={movies[0].title} year={movies[0].year} rating={movies[0].rating} /> */}
 
-        {/* <MovieCard movies={movies} /> */}
-      </main>
-      <Footer />
-    </AuthProvider>
-      
+          {/* <MovieCard id={movies[0].id} title={movies[0].title} year={movies[0].year} rating={movies[0].rating} /> */}
+
+          {/* <MovieCard movies={movies} /> */}
+        </main>
+        <Footer />
+      </AuthProvider>
+
     </>
   );
 }
